@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="25" style="-fx-background-color: linear-gradient(to bottom, #ff7e5f, #feb47b);" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.app1.signup_Controller">
+
+
+    <padding>
+        <Insets bottom="30" left="30" right="30" top="30" />
+    </padding>
+
+    <!-- Header Label -->
+    <Label style="-fx-font-size: 28; -fx-font-weight: bold; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 8, 0.3, 0, 2);" text="Create New Account" textFill="#ffffff" />
+
+    <!-- Username Field -->
+    <TextField fx:id="usernameField" promptText="Enter your username" style="-fx-background-color: #ffffff; -fx-border-color: #ff9a76; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10; -fx-font-size: 14;" />
+
+    <!-- Email Field -->
+    <TextField fx:id="emailField" promptText="Enter your email" style="-fx-background-color: #ffffff; -fx-border-color: #ff9a76; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10; -fx-font-size: 14;" />
+
+    <!-- Password Field (First Entry) -->
+    <PasswordField fx:id="passwordField" promptText="Enter your password" style="-fx-background-color: #ffffff; -fx-border-color: #ff9a76; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10; -fx-font-size: 14;" />
+
+    <!-- Re-enter Password Field (Second Entry) -->
+    <PasswordField fx:id="rePasswordField" promptText="Re-enter your password" style="-fx-background-color: #ffffff; -fx-border-color: #ff9a76; -fx-border-radius: 10; -fx-background-radius: 10; -fx-padding: 10; -fx-font-size: 14;" />
+
+    <!-- Submit Button -->
+    <Button fx:id="submit_button" onAction="#submitButtonAction" prefHeight="45.0" prefWidth="211.0" style="-fx-background-color: linear-gradient(to right, #ff9a76, #ff6f43); -fx-text-fill: #ffffff; -fx-font-size: 16; -fx-font-weight: bold; -fx-background-radius: 10; -fx-padding: 10; -fx-cursor: hand;" stylesheets="@Style.css" text="Submit" />
+
+    <!-- Back Button -->
+    <Button fx:id="back_to_login_button" onAction="#backButtonAction" prefHeight="45.0" prefWidth="215.0" stylesheets="@Style.css" text="Back to Login" />
+
+</VBox>

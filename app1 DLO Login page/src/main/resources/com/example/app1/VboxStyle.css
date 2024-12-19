@@ -1,0 +1,7 @@
+/* styles.css */
+.my-vbox {
+    -fx-background-image: url("background.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover; /* Adjusts the image to cover the entire VBox */
+    -fx-background-position: center; /* Centers the image */
+}
